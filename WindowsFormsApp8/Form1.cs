@@ -127,7 +127,8 @@ namespace WindowsFormsApp8
                 }
                 PriorityQueue<Node> pq = new PriorityQueue<Node>(new CompareNode()); //Định dạng Hàng chờ ưu tiên từ SortedSet
                 distance[start] = 0; //khởi tạo khoảng cách từ nó tới chỉnh nó
-                pq.Enqueue(new Node { index = start, distance = 0, x = points[start].x, y = points[start].y, left = points[start].left, width = points[start].width, top = points[start].top, height = points[start].height }); // Các thuộc tính của điểm đầu tiên (hoặc điểm Start)
+                pq.Enqueue(new Node { index = start, distance = 0, x = points[start].x, y = points[start].y, left = points[start].left, 
+                width = points[start].width, top = points[start].top, height = points[start].height }); // Các thuộc tính của điểm đầu tiên (hoặc điểm Start)
 
                 while (pq.Count > 0)
                 {
